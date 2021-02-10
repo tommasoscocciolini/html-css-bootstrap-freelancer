@@ -1,0 +1,58 @@
+.navbar{
+  background-color: #2C3E50;
+  border: none;
+  border-radius: 0;
+}
+
+.container{
+  padding: 15px;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a{
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  color: #1ABC9C;
+}
+.navbar-default .navbar-brand:hover{
+  color: white;
+}
+
+/* .navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+} */
+
+.navbar-brand{
+  font-weight: bold;
+}
+
+/* .masthead{
+  background-color: #1ABC9C;
+  min-height: 800px;
+} */
+
+.container-fluid{
+  background-color: #1ABC9C;
+  min-height: 800px;
+  padding-top: 100px;
+}
+
+.container-fluid img{
+  height: 300px;
+}
+
+.text-white{
+  color: white;
+}
+
+.main-title{
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.fa-star{
+  color: white;
+  height: 100px;
+}
