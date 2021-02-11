@@ -40,18 +40,17 @@ nav>.container{
   min-height: 800px;
 } */
 
+.p-section{
+  padding: 5rem 0;
+}
+
 #main-top{
   background-color: #1ABC9C;
   padding-top: 80px;
 }
 
-#main-mid{
-  padding: 5rem 0;
-}
-
 #main-bot{
   background-color: #1ABC9C;
-  padding: 5rem 0;
 }
 
 .container-fluid img{
@@ -115,13 +114,12 @@ nav>.container{
   display: inline;
 }
 
-
 .divider{
   width: 75%;
   margin: 0 auto;
 }
 .divider-b{
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 .divider i,.divider-b i{
@@ -132,7 +130,7 @@ nav>.container{
   float: left;
   display: block;
   height: 3px;
-  margin-top: 28px;
+  margin-top: 26px;
   width: 40%;
   background-color: white;
 }
@@ -141,7 +139,7 @@ nav>.container{
   float: right;
   display: block;
   height: 3px;
-  margin-top: 28px;
+  margin-top: 26px;
   width: 40%;
   background-color: white;
 }
@@ -150,18 +148,54 @@ nav>.container{
   float: left;
   display: block;
   height: 3px;
-  margin-top: 28px;
+  margin-top: 26px;
   width: 40%;
-  background-color: black;
+  background-color: #2C3E50;
 }
 .divider-b::after{
   content: '';
   float: right;
   display: block;
   height: 3px;
-  margin-top: 28px;
+  margin-top: 26px;
   width: 40%;
-  background-color: black;
+  background-color: #2C3E50;
+}
+
+.form-group input,
+.form-group textarea{
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  padding: 20px 0;
+  color: #2C3E50;
+  width: 60%;
+}
+
+.btn{
+  /* margin-left: -50%; */
+  background-color: #1ABC9C;
+  border: none;
+  /* padding: auto 20px; */
+}
+
+#pre-foot{
+  background-color: #2C3E50;
+}
+
+footer{
+  background-color: #1A252F;
+}
+
+#pre-foot div{
+  padding: 10px 0;
+}
+
+.socials i {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 @media all and (min-width:1200px) {
