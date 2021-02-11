@@ -1,6 +1,8 @@
 *{
   box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar{
@@ -9,7 +11,7 @@
   border-radius: 0;
 }
 
-.container{
+nav>.container{
   padding: 15px;
 }
 
@@ -38,14 +40,22 @@
   min-height: 800px;
 } */
 
-.container-fluid{
+#main-top{
   background-color: #1ABC9C;
-  min-height: 800px;
-  padding-top: 100px;
+  padding-top: 80px;
+}
+
+#main-mid{
+  padding: 5rem 0;
+}
+
+#main-bot{
+  background-color: #1ABC9C;
+  padding: 5rem 0;
 }
 
 .container-fluid img{
-  height: 300px;
+  height: 250px;
 }
 
 .jumbotron{
@@ -56,16 +66,118 @@
 .text-white{
   color: white;
 }
+.bg-white{
+  color: white;
+  background-color: white;
+}
 
 .fa-star{
   padding-top: 15px;
   font-size: 20px;
 }
-
+/*
 .my-hr{
   border-top: 2px solid;
-}
+} */
 
 .jumbotron>h1{
   font-weight: bold;
+}
+
+.mt-2{
+  margin-top: 1.5rem;
+}
+
+.img-container img{
+  border-radius: 50px;
+  padding: 30px;
+}
+
+.img-container{
+  margin-top: 10px;
+}
+
+#main-bot .container p{
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+
+.download-btn{
+  background: none;
+  border-radius: 10px;
+  border: 2px solid white;
+  padding: 1%;
+  margin-top: 20px;
+  min-width: 100px;
+}
+
+.download-btn i{
+  display: inline;
+}
+
+
+.divider{
+  width: 75%;
+  margin: 0 auto;
+}
+.divider-b{
+  width: 70%;
+  margin: 0 auto;
+}
+.divider i,.divider-b i{
+  font-size: 32px;
+}
+.divider::before{
+  content: '';
+  float: left;
+  display: block;
+  height: 3px;
+  margin-top: 28px;
+  width: 40%;
+  background-color: white;
+}
+.divider::after{
+  content: '';
+  float: right;
+  display: block;
+  height: 3px;
+  margin-top: 28px;
+  width: 40%;
+  background-color: white;
+}
+.divider-b::before{
+  content: '';
+  float: left;
+  display: block;
+  height: 3px;
+  margin-top: 28px;
+  width: 40%;
+  background-color: black;
+}
+.divider-b::after{
+  content: '';
+  float: right;
+  display: block;
+  height: 3px;
+  margin-top: 28px;
+  width: 40%;
+  background-color: black;
+}
+
+@media all and (min-width:1200px) {
+  .divider{
+    width: 35%;
+    margin: 0 auto;
+  }
+  .divider-b{
+    width: 35%;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width:767px) {
+  .img-container img{
+    border-radius: 50px;
+    padding: 20px;
+  }
 }
