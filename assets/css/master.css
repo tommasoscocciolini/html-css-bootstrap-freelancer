@@ -35,11 +35,6 @@ nav>.container{
   font-weight: bold;
 }
 
-/* .masthead{
-  background-color: #1ABC9C;
-  min-height: 800px;
-} */
-
 .p-section{
   padding: 5rem 0;
 }
@@ -74,13 +69,14 @@ nav>.container{
   padding-top: 15px;
   font-size: 20px;
 }
-/*
-.my-hr{
-  border-top: 2px solid;
-} */
 
 .jumbotron>h1{
   font-weight: bold;
+  font-size: 3em;
+}
+
+.jumbotron span{
+  font-size: 1.2em;
 }
 
 .mt-2{
@@ -95,6 +91,10 @@ nav>.container{
 .img-container{
   margin-top: 10px;
 }
+
+/* img.plus-hov:hover{
+  opacity: 0.3;
+} */
 
 #main-bot .container p{
   font-size: 1.5em;
@@ -173,6 +173,10 @@ nav>.container{
   width: 60%;
 }
 
+.my-btn{
+  margin-left: -55%;
+}
+
 .btn{
   /* margin-left: -50%; */
   background-color: #1ABC9C;
@@ -192,13 +196,58 @@ footer{
   padding: 10px 0;
 }
 
-.socials i {
+.socials a {
+  padding: 2px;
+  color: white;
+}
+a i.fab {
+  display: inline-block;
+  border-radius: 60px;
+  padding: 0.7em 0.9em;
   border: 1px solid white;
-  border-radius: 50%;
-  padding: 10px;
+}
+a i.fab:hover {
+  background-color: white;
+  color: #2C3E50;
+  border: 1px solid white;
+}
+
+@media all and (max-width:768px) {
+  .jumbotron>h1{
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  .jumbotron span{
+    font-size: 0.9em;
+  }
+
+  .my-btn{
+    margin-left: -50%;
+  }
+
+  .img-container img{
+    border-radius: 50px;
+    padding: 10px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .download-btn{
+    padding: 2%;
+  }
+
+  section#main-bot .container p{
+    font-size: 1.2em;
+  }
 }
 
 @media all and (min-width:1200px) {
+  .jumbotron>h1{
+    font-size: 4em;
+  }
+
   .divider{
     width: 35%;
     margin: 0 auto;
@@ -206,12 +255,5 @@ footer{
   .divider-b{
     width: 35%;
     margin: 0 auto;
-  }
-}
-
-@media all and (max-width:767px) {
-  .img-container img{
-    border-radius: 50px;
-    padding: 20px;
   }
 }
