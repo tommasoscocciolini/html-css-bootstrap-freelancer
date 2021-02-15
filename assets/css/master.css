@@ -109,6 +109,10 @@ nav>.container{
   margin-top: 20px;
   min-width: 100px;
 }
+.download-btn:hover{
+  color: black;
+  background-color: #ffffff;
+}
 
 .download-btn i{
   display: inline;
@@ -120,7 +124,7 @@ nav>.container{
 }
 .divider-b{
   width: 75%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .divider i,.divider-b i{
   font-size: 32px;
@@ -171,6 +175,7 @@ nav>.container{
   padding: 20px 0;
   color: #2C3E50;
   width: 60%;
+  outline: 0;
 }
 
 .my-btn{
@@ -182,6 +187,7 @@ nav>.container{
   background-color: #1ABC9C;
   border: none;
   /* padding: auto 20px; */
+  outline: 0;
 }
 
 #pre-foot{
@@ -212,6 +218,38 @@ a i.fab:hover {
   border: 1px solid white;
 }
 
+/*code review*/
+.card{
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2em;
+}
+.card img{
+  width: 100%;
+}
+.card .layover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(26, 188, 156, 0.9);
+  display: none;
+  color: #ffffff;
+}
+.layover i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+}
+.card:hover .layover{
+  display: block;
+}
+
 @media all and (max-width:768px) {
   .jumbotron>h1{
     font-weight: bold;
@@ -238,6 +276,7 @@ a i.fab:hover {
     padding: 2%;
   }
 
+
   section#main-bot .container p{
     font-size: 1.2em;
   }
@@ -254,6 +293,5 @@ a i.fab:hover {
   }
   .divider-b{
     width: 35%;
-    margin: 0 auto;
   }
 }
